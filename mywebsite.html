@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-color: skyblue;
+  color: rgb(10, 1, 1);
+  
+}
+.header:hover{background-color:wheat;transition: .6s ease;}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: darkseagreen;transition: .7s ease;
+}
+.navbar:hover{background-color: lightpink;}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: lemonchiffon;transition: .9s ease;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #4ee69f;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: rgb(210, 240, 102);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: lightsteelblue;transition: .7s ease;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg:hover{background-color:lightyellow;transition: cubic-bezier(0.075, 0.82, 0.165, 1);}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color:lightgreen ;
+}
+.footer:hover{background-color:lightcoral;transition: .10s ease;}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>Welcome in the my website</p>
+</div>
+
+<div class="navbar">
+  <a href="https://www.jio.com
+  ">Home</a>
+  <a href="https://www.jio.com/5g">Service</a>
+  <a href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-home/">Plans</a>
+  <a href="g" class="right">about us</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Setting</h2>
+    
+    <div class="fakeimg" style="height:60px;"><i class="fa fa-user" style="font-size:30px;"></i>User</div>
+    <br>
+    <div class="fakeimg" style="height:60px;"><i class="fa fa-volume-control-phone" style="font-size: 30px;"></i>phone</div><br>
+    <div class="fakeimg" style="height:60px;"><i class="fa fa-cog"></i>setting</div><br>
+    <div class="fakeimg" style="height:60px;"><i class="fa fa-wifi"></i> WiFi</div>
+  </div>
+  <div class="main">
+    <h2>About My Website</h2>
+    <section>
+    <div class="fakeimg" style="height:300px;">The company was registered in Ambawadi, Ahmedabad, Gujarat on 15 February 2007 as Infotel Broadband Services Limited (IBSL). In June 2010, Reliance Industries (RIL) bought a 95% stake in IBSL for ₹4,800 crore (equivalent to ₹91 billion or US$1.1 billion in 2020). Although unlisted, IBSL was the only company that won broadband spectrum in all 22 circles in India in the 4G auction that took place earlier that year.[13] Later continuing as RIL's telecom subsidiary, Infotel Broadband Services Limited was renamed as Reliance Jio Infocomm Limited (RJIL) in January 2013.[14]
+
+        In June 2015, Jio announced that it would start its operations throughout the country by the end of 2015.[15] However, four months later in October, the company postponed the launch to the first quarter of the financial year 2016–2017.[16]
+        
+        Later, in July 2015, a PIL filed in the Supreme Court by an NGO called the Centre for Public Interest Litigation, through Prashant Bhushan, challenged the grant of a pan-India license to Jio by the Government of India.</div>
+    </section>
+    
+    <p>Some text..</p>
+<p>this website is all about layout and i add some hover effect in my website or layout row. </p>
+    <br>
+    
+    
+    <div class="fakeimg" style="height:200px;"><i class="fa fa-info" style="font-size: 30px;"></i>
+    <i class="fa fa-phone-square" style="font-size: 30px;"></i>
+    <i class="fa fa-commenting" style="font-size: 40px;"></i>
+    </div>
+    <p>Some text..</p>
+    <p>this website is all about layout and i add some hover effect in my website or layout row.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><i class="fa fa-contact"></i>Thank You!</h2>
+</div>
+
+</body>
+</html>
